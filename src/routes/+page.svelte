@@ -20,6 +20,8 @@
 
   export let data: { commits: Commit[] };
 
+  console.log(data)
+
   type BranchType = "prod" | "staging" | "dev";
 
   type GroupedCommits = {

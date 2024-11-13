@@ -22,6 +22,7 @@ export async function GET({ url }) {
     );
 
     if (!response.ok) {
+      console.error(await response.text())
       throw new Error(`GitHub API responded with ${response.status}`);
     }
 
